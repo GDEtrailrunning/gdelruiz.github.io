@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> GDE - Trail Running</title>  
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="gde1.png" type="image/x-icon">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    </head>
+<body>
+<div class="container">
+    <div class="main-container">
+        <div class="column-container 1">     
+            <img class="imagen-chica" src="Montaña blanco.png" alt="Montaña Blanco">
+            </div>
+        <div class="column-container 2">     
+            <h1><br><br>PROGRAMA DE ENTRENAMIENTO GDE <br> TRAIL RUNNING <br>Alumno: Luciano Ruiz</h1>
+            </div>
+    </div>
+        <h2>OBJETIVO MENSUAL: Mantener regularidad con bajo nivel de dolor. </h2>
+        <h2>FASE: Adquisición. </h2>
+        <h2 id ="pageTitle">PRÓXIMA CARRERA VALHOLL: 2025/03/22 </h2> 
+        <h2 id="result"></h2> 
+        
+        
+    <div class="sub-container">
+         <h4>SEMANA 1
+            <br>Objetivo semanal: Conciencia en el paso. </h4>
+        <p>Entrada en calor </p>   
+        <p> 4 vueltas x 13 repeticiones </p>
+        <div class="image-container">  
+            <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+                <source src="Video1.mp4" type="video/mp4">
+                </video>
+        </div>
+        <div class="image-container">  
+            <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+                <source src="Video2.mp4" type="video/mp4">
+                </video>
+        </div>
+    </div>
+    <div><p> Running </p>
+    </div>
+    <div class="column-container 1">           
+        <div class="column">
+            <h3>Dia 1        
+            <br> Martes: 13 km calle "pasadas".</h3>
+            <p> -2 km de menor a mayor aumentando cada 2'. </p>
+            <p> -3 km, 300m fuertes x 300m suaves. </p>
+            <p> -6 km, 200m fuertes x 100m suaves. </p>
+            <p> -2 km buenas sensaciones. </p>
+        </div>
+        <div class="column">
+            <h3>Dia 2
+            <br> Jueves: 14 km calle, "pasadas circulares".</h3>
+            <p> -3 km suaves. </p>
+            <p> -3 km ágiles. </p>
+            <p> -2 km, 4 series x 150m fuertes x 100m ágiles x 150m fuertes x 100m ágiles (calle del Cricyt). </p>
+            <p> -2 km buenas sensaciones bajando. </p>
+            <p> -3 km, 5 series x 200m fuertes x 100m ágiles x 200m fuertes x 100m ágiles. </p>
+            <p> -4 km buenas sensaciones bajando. </p>
+        </div>
+        <div class="column">
+            <h3>Dia 3 (con Agus y Mati L)
+            <br> Sábado: 14 km trail Arco.</h3>
+            <p> -2 km de  menor a mayor x río seco. </p>
+            <p> -3 km, 400m ágiles x 3' suaves. </p>
+            <p> -4 km, 400m trekkin exigido x 3' suaves. </p>
+            <p> -5 km bajas pulsaciones. </p>
+        </div>
+    </div>
+
+    <div class="small-paragraph-container">
+        <p> Método de recuperación </p>
+        <p> - Masaje al terminar los entrenos 2' amasamiento en cuadriceps. <p>     
+    </div>
+    
+    <!--<div class="image-container">  
+        <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+        <source src="Video3.mp4" type="video/mp4">
+        </video>
+    </div> -->
+
+    <div id="column-container-1" class="chart-container">
+        <canvas id="myChart-line-1"></canvas>
+        
+    <!--<div class="sub-container">
+        <h4>SEMANA 2
+        <br>Objetivo semanal: . </h4>
+        <p>Entrada en calor </p>  
+        <p> 4 vueltas x 14 repeticiones </p>
+        <div class="image-container">  
+            <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+            <source src="Video4.mp4" type="video/mp4">
+        </div>
+        <div class="image-container">  
+            <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+            <source src="Video5.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div><p> Running </p>
+    </div>
+    <div class="column-container 1">           
+        <div class="column">
+            <h3>Dia 1
+            <br> Martes: .</h3>
+            <p> - km . </p>
+            <p> - km . </p>
+            <p> - km . </p>
+            <p> - km . </p>
+            <p> - km . </p>
+        </div>
+        <div class="column">
+            <h3>Dia 2
+            <br> Jueves: .</h3>
+            <p> - km . </p>
+            <p> - km . </p>
+            <p> - km . </p>
+            <p> - km . </p>
+            <p> - km . </p>
+        </div>
+        <div class="column">
+            <h3>Dia 3 
+            <br> Sábado: .</h3>
+            <p> - km . </p>
+            <p> - km . </p>
+            <p> - km . </p>
+            <p> - km . </p>
+            <p> - km . </p>
+        </div> 
+    </div>
+
+    <div class="small-paragraph-container">
+        <p> Método de recuperación </p>
+        <p> - . </p>     
+    </div> 
+
+    <div class="image-container">  
+        <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+        <source src="Video6.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="column-container-1" class="chart-container">
+        <canvas id="myChart-line-1"></canvas>
+       </div>    --> 
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
