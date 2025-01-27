@@ -24,25 +24,20 @@ const dataLine2 = {
   }]
 };
 
-// Configuración del gráfico de líneas
-const configLine = {
-  type: 'line',
-  data: dataLine1, // Puede cambiar esto a dataLine2 para mostrar el gráfico de la segunda sección
-  options: {
+ // Opciones comunes para los gráficos
+ const commonOptions = {
+  responsive: false, // Desactiva el ajuste automático
+    maintainAspectRatio: false, // Permite ajustar proporciones
     scales: {
-      y: {
-        beginAtZero: true
-      }
+      y: { beginAtZero: true }
     }
-  }
-};
+  };
 
 // Seleccione los contextos de los <canvas> y cree los gráficos
 const myChartLine1 = new Chart(document.getElementById('myChart-line-1'), {
   type: 'line',
   data: dataLine1,
   options: {
-    responsive: true, // Esto asegura que el gráfico se ajuste a diferentes tamaños de pantalla
     scales: {
       y: {
         beginAtZero: true
@@ -62,6 +57,16 @@ const myChartLine2 = new Chart(document.getElementById('myChart-line-2'), {
     }
   }
 });
+
+
+  // Ajustar tamaño de los gráficos
+  const canvas1 = document.getElementById('myChart-line-1');
+  canvas1.width = 1000; // Ancho deseado
+  canvas1.height = 500; // Alto deseado
+
+  const canvas2 = document.getElementById('myChart-line-2');
+  canvas2.width = 1000; // Ancho deseado
+  canvas2.height = 500; // Alto deseado
 
 
 function actualizarDiasRestantes() {
@@ -122,4 +127,6 @@ function actualizarDiasRestantes() {
   document.getElementById("Semana 2").appendChild(video4);
 
 });
+
+
 
